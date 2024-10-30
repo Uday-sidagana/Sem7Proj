@@ -1,0 +1,13 @@
+prefix=/Users/macbookair/Desktop/python/AI-test/FirstAgent/venv
+exec_prefix=/Users/macbookair/Desktop/python/AI-test/FirstAgent/venv
+libdir=/Users/macbookair/Desktop/python/AI-test/FirstAgent/venv/lib
+sharedlibdir=/Users/macbookair/Desktop/python/AI-test/FirstAgent/venv/lib
+includedir=/Users/macbookair/Desktop/python/AI-test/FirstAgent/venv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
