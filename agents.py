@@ -4,14 +4,17 @@ from dotenv import load_dotenv
 load_dotenv()
 from langchain_google_genai import ChatGoogleGenerativeAI
 from litellm import completion
+import litellm
 
 import os
 
 # Initialize the LLM
-llm = completion(
+llm = (
+    litellm.set_verbose=True,
     model="gemini-1.5-pro",
     verbose=True,
     temperature=1.0,
+    
     google_api_key=os.getenv("GOOGLE_API_KEY")
 )
 
